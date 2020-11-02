@@ -19,7 +19,7 @@ public class Fila
      * Constructor  
      */
     public Fila(String id)    {
-         
+         id=id;
 
     }
 
@@ -27,7 +27,10 @@ public class Fila
      * Constructor  
      */
     public Fila(String id, Fecha fecha, double ingresos, double gastos)    {
-        
+        id=id;
+        fecha=fecha;
+        ingresos=ingresos;
+        gastos=gastos;
 
     }
     
@@ -78,7 +81,10 @@ public class Fila
      * 
      */
     public Fila duplicar() {
-       return null;
+       Fila duplicaFila = new Fila(getId(), getFecha(), getIngresos(),getGastos());
+       
+       return duplicaFila;
+       
 
     }
 

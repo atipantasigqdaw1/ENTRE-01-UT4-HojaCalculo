@@ -1,4 +1,3 @@
-
 /**
  *  Un objeto de esta clase representa a una sencilla
  *  hoja de cálculo. La hoja tiene hasta un máximo de 3 filas (no más)
@@ -76,7 +75,8 @@ public class HojaCalculo
      * (tiene exactamente 3 filas)
      */
     public boolean hojaCompleta() {
-        return true;
+        
+        return (getNumeroFilas()==3);
 
     }
 
